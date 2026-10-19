@@ -1,0 +1,67 @@
+{
+ "nombre": "Propio",
+ "idioma": "es",
+ "url_base": "https://por-definir.example",
+ "indexable": false,
+ "og_imagen": "/assets/img/og.png",
+ "peso_max_kb": 150,
+ "externos_aprobados": [
+  "challenges.cloudflare.com"
+ ],
+ "menu": [
+  {
+   "etiqueta": "Invierte",
+   "href": "/empezar-a-invertir/"
+  },
+  {
+   "etiqueta": "Compra o arrienda",
+   "href": "/comprar-o-arrendar-para-mi/"
+  },
+  {
+   "etiqueta": "Vende",
+   "href": "/vender-o-arrendar/"
+  },
+  {
+   "etiqueta": "Conoce el valor",
+   "href": "/conocer-precio/"
+  },
+  {
+   "etiqueta": "Inmuebles",
+   "href": "/oportunidades/"
+  },
+  {
+   "etiqueta": "Cómo funciona",
+   "href": "/#como-funciona"
+  },
+  {
+   "etiqueta": "Contacto",
+   "href": "/contacto/"
+  }
+ ],
+ "pie": [
+  {
+   "etiqueta": "Privacidad",
+   "href": "/privacidad/"
+  },
+  {
+   "etiqueta": "Términos",
+   "href": "/terminos/"
+  },
+  {
+   "etiqueta": "Acuerdo de comisión",
+   "href": "/acuerdo-comision/"
+  },
+  {
+   "etiqueta": "Invertir por mi cuenta",
+   "href": "/invertir-por-mi-cuenta/"
+  },
+  {
+   "etiqueta": "Casos reales",
+   "href": "/casos/"
+  },
+  {
+   "etiqueta": "Comunidad",
+   "href": "/comunidad/"
+  }
+ ]
+}

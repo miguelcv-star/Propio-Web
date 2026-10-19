@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compra o arrienda con Propio</title>
+<meta name="description" content="Dinos qué inmueble buscas y recibe un reporte de inmuebles que cumplen lo que necesitas.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://por-definir.example/comprar-o-arrendar-para-mi/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Propio">
+<meta property="og:title" content="Compra o arrienda con Propio">
+<meta property="og:description" content="Dinos qué inmueble buscas y recibe un reporte de inmuebles que cumplen lo que necesitas.">
+<meta property="og:url" content="https://por-definir.example/comprar-o-arrendar-para-mi/">
+<meta property="og:image" content="https://por-definir.example/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.ico">
+<link rel="preload" href="/assets/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/propio.css">
+<script src="/assets/js/menu.js" defer></script>
+<script src="/assets/js/config.js" defer></script>
+<script src="/assets/js/lib.js" defer></script>
+<script src="/assets/js/formularios.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="web-cabecera">
+  <div class="web-contenedor">
+    <a class="web-marca" href="/" aria-label="Propio — inicio"><img src="/assets/img/propio-logo.svg" alt="Propio" width="123" height="47"></a>
+    <button type="button" class="web-menu-boton" aria-expanded="false" aria-controls="menu-principal" data-menu-boton>Abrir menú</button>
+    <nav id="menu-principal" class="nav" aria-label="Principal">
+      <a href="/empezar-a-invertir/">Invierte</a>
+      <a href="/comprar-o-arrendar-para-mi/" class="activo" aria-current="page">Compra o arrienda</a>
+      <a href="/vender-o-arrendar/">Vende</a>
+      <a href="/conocer-precio/">Conoce el valor</a>
+      <a href="/oportunidades/">Inmuebles</a>
+      <a href="/#como-funciona">Cómo funciona</a>
+      <a href="/contacto/">Contacto</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido" class="web-contenedor" tabindex="-1">
+<section class="web-portada">
+  <h1>Encuentra un inmueble que funcione para tu vida, tu familia o tu negocio.</h1>
+  <p>Tú nos dices qué necesitas. Propio busca entre los avisos del mercado y te entrega un reporte de los inmuebles que cumplen, con el enlace al aviso original.</p>
+</section>
+<section class="web-seccion" aria-labelledby="t-form">
+  <form class="web-formulario" data-propio-form="busqueda" novalidate aria-labelledby="t-form">
+    <h2 id="t-form">¿Qué estás buscando?</h2>
+    <fieldset>
+      <legend>El inmueble</legend>
+      <div class="web-campos">
+        <div class="campo">
+          <label for="f-operacion">¿Comprar o arrendar?</label>
+          <select id="f-operacion" name="operacion" required aria-describedby="e-operacion">
+            <option value="">Elige una opción</option>
+            <option value="venta">Comprar</option>
+            <option value="arriendo">Arrendar</option>
+          </select>
+          <p class="campo-error" id="e-operacion" data-error-for="operacion"></p>
+        </div>
+        <div class="campo">
+          <label for="f-tipo">Tipo de inmueble</label>
+          <select id="f-tipo" name="tipo_inmueble">
+            <option value="">Elige un tipo</option>
+<option value="apartamento">Apartamento</option>
+<option value="casa">Casa</option>
+<option value="lote">Lote</option>
+<option value="local">Local</option>
+<option value="oficina">Oficina</option>
+<option value="bodega">Bodega</option>
+          </select>
+        </div>
+        <div class="campo">
+  <label for="f-localidad">Localidad (Bogotá)</label>
+  <select id="f-localidad" name="localidad" aria-describedby="e-localidad">
+    <option value="">Elige una localidad</option>
+    <option>Usaquén</option><option>Chapinero</option><option>Santa Fe</option><option>San Cristóbal</option>
+    <option>Usme</option><option>Tunjuelito</option><option>Bosa</option><option>Kennedy</option>
+    <option>Fontibón</option><option>Engativá</option><option>Suba</option><option>Barrios Unidos</option>
+    <option>Teusaquillo</option><option>Los Mártires</option><option>Antonio Nariño</option><option>Puente Aranda</option>
+    <option>La Candelaria</option><option>Rafael Uribe Uribe</option><option>Ciudad Bolívar</option><option>Sumapaz</option>
+  </select>
+  <p class="campo-error" id="e-localidad" data-error-for="localidad"></p>
+</div>
+<div class="campo">
+  <label for="f-barrio">Barrio (opcional)</label>
+  <input id="f-barrio" name="barrio" type="text" maxlength="80" autocomplete="off">
+</div>
+        <div class="campo">
+          <label for="f-presupuesto-min">Presupuesto mínimo (millones de pesos)</label>
+          <input id="f-presupuesto-min" name="presupuesto_min" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-presupuesto-max">Presupuesto máximo (millones de pesos)</label>
+          <input id="f-presupuesto-max" name="presupuesto_max" type="number" inputmode="decimal" min="0" step="any">
+          <span class="ayuda">En arriendo, escribe el canon mensual en millones (ej.: 3,5).</span>
+        </div>
+        <div class="campo">
+          <label for="f-area-min">Área mínima (m²)</label>
+          <input id="f-area-min" name="area_min" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-area-max">Área máxima (m²)</label>
+          <input id="f-area-max" name="area_max" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-habitaciones-min">Habitaciones (mínimo)</label>
+          <input id="f-habitaciones-min" name="habitaciones_min" type="number" inputmode="numeric" min="0" max="20">
+        </div>
+        <div class="campo">
+          <label for="f-banos-min">Baños (mínimo)</label>
+          <input id="f-banos-min" name="banos_min" type="number" inputmode="numeric" min="0" max="20">
+        </div>
+        <div class="campo">
+          <label for="f-estrato">Estrato</label>
+          <select id="f-estrato" name="estrato">
+            <option value="">Sin indicar</option>
+<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+          </select>
+        </div>
+        <div class="campo ancho">
+          <label for="f-mensaje">Algo más que debamos saber (opcional)</label>
+          <textarea id="f-mensaje" name="mensaje" maxlength="900"></textarea>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+  <legend>Tus datos</legend>
+  <div class="web-campos">
+    <div class="campo">
+      <label for="f-nombre">Nombre</label>
+      <input id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="120" required aria-describedby="e-nombre">
+      <p class="campo-error" id="e-nombre" data-error-for="nombre"></p>
+    </div>
+    <div class="campo">
+      <label for="f-telefono">Teléfono o WhatsApp</label>
+      <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" maxlength="30" aria-describedby="e-telefono">
+      <p class="campo-error" id="e-telefono" data-error-for="telefono"></p>
+    </div>
+    <div class="campo">
+      <label for="f-email">Correo electrónico</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" maxlength="160" aria-describedby="e-email">
+      <p class="campo-error" id="e-email" data-error-for="email"></p>
+    </div>
+  </div>
+  <p class="meta">Déjanos al menos un teléfono o un correo para poder contactarte.</p>
+</fieldset>
+    <div class="campo-check">
+  <input id="f-consentimiento" type="checkbox" name="consentimiento" aria-describedby="e-consentimiento">
+  <label for="f-consentimiento">Autorizo el tratamiento de mis datos personales para que Propio me contacte y atienda esta solicitud, según la <a href="/privacidad/">Política de tratamiento de datos</a>.</label>
+</div>
+<p class="campo-error" id="e-consentimiento" data-error-for="consentimiento"></p>
+<div class="trampa" aria-hidden="true">
+  <label for="f-sitio-web">Déjalo vacío</label>
+  <input id="f-sitio-web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+</div>
+<div data-turnstile></div>
+<p class="web-estado" role="status" aria-live="polite" data-estado></p>
+    <div class="web-form-acciones"><button type="submit" class="btn-primario">Quiero encontrar mi próximo inmueble</button></div>
+  </form>
+  <section class="web-resultados" data-resultados aria-live="polite" hidden></section>
+  <p class="web-nota web-nota-sep">Los inmuebles del reporte son avisos publicados en portales de terceros. Propio no es su anunciante: verifica el precio y la disponibilidad en el aviso original.</p>
+</section>
+</main>
+<footer class="web-pie">
+  <div class="web-contenedor web-pie-fila">
+    <span>© Propio</span>
+    <nav aria-label="Información legal">
+      <a href="/privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+      <a href="/acuerdo-comision/">Acuerdo de comisión</a>
+      <a href="/invertir-por-mi-cuenta/">Invertir por mi cuenta</a>
+      <a href="/casos/">Casos reales</a>
+      <a href="/comunidad/">Comunidad</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

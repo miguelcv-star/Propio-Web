@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invertir por tu cuenta con datos de Propio</title>
+<meta name="description" content="Busca y compara oportunidades inmobiliarias con datos antes de decidir por tu cuenta.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://por-definir.example/invertir-por-mi-cuenta/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Propio">
+<meta property="og:title" content="Invertir por tu cuenta con datos de Propio">
+<meta property="og:description" content="Busca y compara oportunidades inmobiliarias con datos antes de decidir por tu cuenta.">
+<meta property="og:url" content="https://por-definir.example/invertir-por-mi-cuenta/">
+<meta property="og:image" content="https://por-definir.example/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.ico">
+<link rel="preload" href="/assets/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/propio.css">
+<script src="/assets/js/menu.js" defer></script>
+<script src="/assets/js/config.js" defer></script>
+<script src="/assets/js/lib.js" defer></script>
+<script src="/assets/js/formularios.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="web-cabecera">
+  <div class="web-contenedor">
+    <a class="web-marca" href="/" aria-label="Propio — inicio"><img src="/assets/img/propio-logo.svg" alt="Propio" width="123" height="47"></a>
+    <button type="button" class="web-menu-boton" aria-expanded="false" aria-controls="menu-principal" data-menu-boton>Abrir menú</button>
+    <nav id="menu-principal" class="nav" aria-label="Principal">
+      <a href="/empezar-a-invertir/">Invierte</a>
+      <a href="/comprar-o-arrendar-para-mi/">Compra o arrienda</a>
+      <a href="/vender-o-arrendar/">Vende</a>
+      <a href="/conocer-precio/">Conoce el valor</a>
+      <a href="/oportunidades/">Inmuebles</a>
+      <a href="/#como-funciona">Cómo funciona</a>
+      <a href="/contacto/">Contacto</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido" class="web-contenedor" tabindex="-1">
+<section class="web-portada">
+  <h1>Busca y compara oportunidades inmobiliarias con datos antes de decidir por tu cuenta.</h1>
+  <p>Mira los inmuebles que ya hay publicados en Propio y, si quieres que te avisemos de oportunidades que encajen con tu presupuesto, déjanos tus datos.</p>
+  <div class="web-acciones"><a class="btn-secundario" href="/oportunidades/">Ver inmuebles publicados</a></div>
+</section>
+<section class="web-seccion" aria-labelledby="t-explora">
+  <h2 id="t-explora">Qué puedes hacer</h2>
+  <ul class="web-lista">
+    <li>Conocer el valor de mercado de un inmueble que te interese.</li>
+    <li>Recibir un reporte de inmuebles que cumplen lo que buscas.</li>
+    <li>Pedirnos que te avisemos de oportunidades dentro de tu presupuesto.</li>
+  </ul>
+  <p class="web-nota">El análisis tiene límites: se basa en avisos publicados, que pueden cambiar o contener errores. Verifica siempre antes de decidir.</p>
+  <form class="web-formulario" data-propio-form="invierte" data-prefijo-mensaje="[Invertir por mi cuenta]" novalidate aria-labelledby="t-form">
+    <h2 id="t-form">Quiero explorar oportunidades</h2>
+    <fieldset>
+  <legend>Tus datos</legend>
+  <div class="web-campos">
+    <div class="campo">
+      <label for="f-nombre">Nombre</label>
+      <input id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="120" required aria-describedby="e-nombre">
+      <p class="campo-error" id="e-nombre" data-error-for="nombre"></p>
+    </div>
+    <div class="campo">
+      <label for="f-telefono">Teléfono o WhatsApp</label>
+      <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" maxlength="30" aria-describedby="e-telefono">
+      <p class="campo-error" id="e-telefono" data-error-for="telefono"></p>
+    </div>
+    <div class="campo">
+      <label for="f-email">Correo electrónico</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" maxlength="160" aria-describedby="e-email">
+      <p class="campo-error" id="e-email" data-error-for="email"></p>
+    </div>
+  </div>
+  <p class="meta">Déjanos al menos un teléfono o un correo para poder contactarte.</p>
+</fieldset>
+    <fieldset>
+      <legend>Tu búsqueda</legend>
+      <div class="web-campos">
+        <div class="campo">
+          <label for="f-presupuesto-min">Presupuesto mínimo (millones de pesos)</label>
+          <input id="f-presupuesto-min" name="presupuesto_min" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-presupuesto-max">Presupuesto máximo (millones de pesos)</label>
+          <input id="f-presupuesto-max" name="presupuesto_max" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-plazo">Horizonte</label>
+          <select id="f-plazo" name="plazo">
+            <option value="">Sin definir</option>
+            <option value="0-1">Inmediato (hasta 1 mes)</option>
+            <option value="1-3">Entre 1 y 3 meses</option>
+            <option value="3-6">Entre 3 y 6 meses</option>
+            <option value="6-12">Entre 6 y 12 meses</option>
+            <option value="12+">Más de 12 meses</option>
+          </select>
+        </div>
+        <div class="campo ancho">
+          <label for="f-mensaje">Zonas o tipo de inmueble que te interesan (opcional)</label>
+          <textarea id="f-mensaje" name="mensaje" maxlength="900"></textarea>
+        </div>
+      </div>
+    </fieldset>
+    <div class="campo-check">
+  <input id="f-consentimiento" type="checkbox" name="consentimiento" aria-describedby="e-consentimiento">
+  <label for="f-consentimiento">Autorizo el tratamiento de mis datos personales para que Propio me contacte y atienda esta solicitud, según la <a href="/privacidad/">Política de tratamiento de datos</a>.</label>
+</div>
+<p class="campo-error" id="e-consentimiento" data-error-for="consentimiento"></p>
+<div class="trampa" aria-hidden="true">
+  <label for="f-sitio-web">Déjalo vacío</label>
+  <input id="f-sitio-web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+</div>
+<div data-turnstile></div>
+<p class="web-estado" role="status" aria-live="polite" data-estado></p>
+    <div class="web-form-acciones"><button type="submit" class="btn-primario">Quiero explorar oportunidades</button></div>
+  </form>
+</section>
+</main>
+<footer class="web-pie">
+  <div class="web-contenedor web-pie-fila">
+    <span>© Propio</span>
+    <nav aria-label="Información legal">
+      <a href="/privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
+      <a href="/acuerdo-comision/">Acuerdo de comisión</a>
+      <a href="/invertir-por-mi-cuenta/" class="activo" aria-current="page">Invertir por mi cuenta</a>
+      <a href="/casos/">Casos reales</a>
+      <a href="/comunidad/">Comunidad</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

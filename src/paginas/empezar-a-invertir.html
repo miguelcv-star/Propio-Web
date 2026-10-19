@@ -1,0 +1,53 @@
+ruta: /empezar-a-invertir/
+titulo: Invierte en inmuebles con Propio
+descripcion: Cuéntanos tu presupuesto y tu plazo y te acompañamos a encontrar oportunidades inmobiliarias con datos.
+scripts: config.js lib.js formularios.js
+---
+<section class="web-portada">
+  <h1>Pasa de querer invertir a tener un plan inmobiliario concreto.</h1>
+  <p>Cuéntanos cuánto quieres invertir y en qué plazo. Un asesor de Propio te contactará para definir contigo una estrategia y revisar oportunidades reales del mercado.</p>
+</section>
+<section class="web-seccion" aria-labelledby="t-que-incluye">
+  <h2 id="t-que-incluye">Qué incluye</h2>
+  <ul class="web-lista">
+    <li>Diagnóstico de tus objetivos y de tu presupuesto.</li>
+    <li>Tipos de inmueble y zonas que encajan con tu estrategia.</li>
+    <li>Análisis de oportunidades con comparables y supuestos visibles.</li>
+    <li>Acompañamiento opcional hasta cerrar el negocio.</li>
+  </ul>
+  <p class="web-nota">Invertir en inmuebles implica riesgos. Propio no promete rentabilidades: te muestra los datos para que decidas con información.</p>
+  <form class="web-formulario" data-propio-form="invierte" data-prefijo-mensaje="[Empezar a invertir]" novalidate aria-labelledby="t-form">
+    <h2 id="t-form">Quiero comenzar mi plan de inversión</h2>
+    {{incluir:campos-persona}}
+    <fieldset>
+      <legend>Tu inversión</legend>
+      <div class="web-campos">
+        <div class="campo">
+          <label for="f-presupuesto-min">Presupuesto mínimo (millones de pesos)</label>
+          <input id="f-presupuesto-min" name="presupuesto_min" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej.: 200">
+        </div>
+        <div class="campo">
+          <label for="f-presupuesto-max">Presupuesto máximo (millones de pesos)</label>
+          <input id="f-presupuesto-max" name="presupuesto_max" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej.: 600">
+        </div>
+        <div class="campo">
+          <label for="f-plazo">¿En cuánto tiempo quieres invertir?</label>
+          <select id="f-plazo" name="plazo">
+            <option value="">Sin definir</option>
+            <option value="0-1">Inmediato (hasta 1 mes)</option>
+            <option value="1-3">Entre 1 y 3 meses</option>
+            <option value="3-6">Entre 3 y 6 meses</option>
+            <option value="6-12">Entre 6 y 12 meses</option>
+            <option value="12+">Más de 12 meses</option>
+          </select>
+        </div>
+        <div class="campo ancho">
+          <label for="f-mensaje">Cuéntanos más (opcional)</label>
+          <textarea id="f-mensaje" name="mensaje" maxlength="900"></textarea>
+        </div>
+      </div>
+    </fieldset>
+    {{incluir:consentimiento}}
+    <div class="web-form-acciones"><button type="submit" class="btn-primario">Quiero comenzar mi plan de inversión</button></div>
+  </form>
+</section>

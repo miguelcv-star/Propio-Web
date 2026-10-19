@@ -1,0 +1,21 @@
+<fieldset>
+  <legend>Tus datos</legend>
+  <div class="web-campos">
+    <div class="campo">
+      <label for="f-nombre">Nombre</label>
+      <input id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="120" required aria-describedby="e-nombre">
+      <p class="campo-error" id="e-nombre" data-error-for="nombre"></p>
+    </div>
+    <div class="campo">
+      <label for="f-telefono">Teléfono o WhatsApp</label>
+      <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" maxlength="30" aria-describedby="e-telefono">
+      <p class="campo-error" id="e-telefono" data-error-for="telefono"></p>
+    </div>
+    <div class="campo">
+      <label for="f-email">Correo electrónico</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" maxlength="160" aria-describedby="e-email">
+      <p class="campo-error" id="e-email" data-error-for="email"></p>
+    </div>
+  </div>
+  <p class="meta">Déjanos al menos un teléfono o un correo para poder contactarte.</p>
+</fieldset>

@@ -1,0 +1,53 @@
+ruta: /invertir-por-mi-cuenta/
+titulo: Invertir por tu cuenta con datos de Propio
+descripcion: Busca y compara oportunidades inmobiliarias con datos antes de decidir por tu cuenta.
+scripts: config.js lib.js formularios.js
+---
+<section class="web-portada">
+  <h1>Busca y compara oportunidades inmobiliarias con datos antes de decidir por tu cuenta.</h1>
+  <p>Mira los inmuebles que ya hay publicados en Propio y, si quieres que te avisemos de oportunidades que encajen con tu presupuesto, déjanos tus datos.</p>
+  <div class="web-acciones"><a class="btn-secundario" href="/oportunidades/">Ver inmuebles publicados</a></div>
+</section>
+<section class="web-seccion" aria-labelledby="t-explora">
+  <h2 id="t-explora">Qué puedes hacer</h2>
+  <ul class="web-lista">
+    <li>Conocer el valor de mercado de un inmueble que te interese.</li>
+    <li>Recibir un reporte de inmuebles que cumplen lo que buscas.</li>
+    <li>Pedirnos que te avisemos de oportunidades dentro de tu presupuesto.</li>
+  </ul>
+  <p class="web-nota">El análisis tiene límites: se basa en avisos publicados, que pueden cambiar o contener errores. Verifica siempre antes de decidir.</p>
+  <form class="web-formulario" data-propio-form="invierte" data-prefijo-mensaje="[Invertir por mi cuenta]" novalidate aria-labelledby="t-form">
+    <h2 id="t-form">Quiero explorar oportunidades</h2>
+    {{incluir:campos-persona}}
+    <fieldset>
+      <legend>Tu búsqueda</legend>
+      <div class="web-campos">
+        <div class="campo">
+          <label for="f-presupuesto-min">Presupuesto mínimo (millones de pesos)</label>
+          <input id="f-presupuesto-min" name="presupuesto_min" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-presupuesto-max">Presupuesto máximo (millones de pesos)</label>
+          <input id="f-presupuesto-max" name="presupuesto_max" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-plazo">Horizonte</label>
+          <select id="f-plazo" name="plazo">
+            <option value="">Sin definir</option>
+            <option value="0-1">Inmediato (hasta 1 mes)</option>
+            <option value="1-3">Entre 1 y 3 meses</option>
+            <option value="3-6">Entre 3 y 6 meses</option>
+            <option value="6-12">Entre 6 y 12 meses</option>
+            <option value="12+">Más de 12 meses</option>
+          </select>
+        </div>
+        <div class="campo ancho">
+          <label for="f-mensaje">Zonas o tipo de inmueble que te interesan (opcional)</label>
+          <textarea id="f-mensaje" name="mensaje" maxlength="900"></textarea>
+        </div>
+      </div>
+    </fieldset>
+    {{incluir:consentimiento}}
+    <div class="web-form-acciones"><button type="submit" class="btn-primario">Quiero explorar oportunidades</button></div>
+  </form>
+</section>

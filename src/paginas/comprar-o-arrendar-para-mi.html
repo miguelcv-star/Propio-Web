@@ -1,0 +1,75 @@
+ruta: /comprar-o-arrendar-para-mi/
+titulo: Compra o arrienda con Propio
+descripcion: Dinos qué inmueble buscas y recibe un reporte de inmuebles que cumplen lo que necesitas.
+scripts: config.js lib.js formularios.js
+---
+<section class="web-portada">
+  <h1>Encuentra un inmueble que funcione para tu vida, tu familia o tu negocio.</h1>
+  <p>Tú nos dices qué necesitas. Propio busca entre los avisos del mercado y te entrega un reporte de los inmuebles que cumplen, con el enlace al aviso original.</p>
+</section>
+<section class="web-seccion" aria-labelledby="t-form">
+  <form class="web-formulario" data-propio-form="busqueda" novalidate aria-labelledby="t-form">
+    <h2 id="t-form">¿Qué estás buscando?</h2>
+    <fieldset>
+      <legend>El inmueble</legend>
+      <div class="web-campos">
+        <div class="campo">
+          <label for="f-operacion">¿Comprar o arrendar?</label>
+          <select id="f-operacion" name="operacion" required aria-describedby="e-operacion">
+            <option value="">Elige una opción</option>
+            <option value="venta">Comprar</option>
+            <option value="arriendo">Arrendar</option>
+          </select>
+          <p class="campo-error" id="e-operacion" data-error-for="operacion"></p>
+        </div>
+        <div class="campo">
+          <label for="f-tipo">Tipo de inmueble</label>
+          <select id="f-tipo" name="tipo_inmueble">
+            {{incluir:opciones-tipo}}
+          </select>
+        </div>
+        {{incluir:campos-ubicacion}}
+        <div class="campo">
+          <label for="f-presupuesto-min">Presupuesto mínimo (millones de pesos)</label>
+          <input id="f-presupuesto-min" name="presupuesto_min" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-presupuesto-max">Presupuesto máximo (millones de pesos)</label>
+          <input id="f-presupuesto-max" name="presupuesto_max" type="number" inputmode="decimal" min="0" step="any">
+          <span class="ayuda">En arriendo, escribe el canon mensual en millones (ej.: 3,5).</span>
+        </div>
+        <div class="campo">
+          <label for="f-area-min">Área mínima (m²)</label>
+          <input id="f-area-min" name="area_min" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-area-max">Área máxima (m²)</label>
+          <input id="f-area-max" name="area_max" type="number" inputmode="decimal" min="0" step="any">
+        </div>
+        <div class="campo">
+          <label for="f-habitaciones-min">Habitaciones (mínimo)</label>
+          <input id="f-habitaciones-min" name="habitaciones_min" type="number" inputmode="numeric" min="0" max="20">
+        </div>
+        <div class="campo">
+          <label for="f-banos-min">Baños (mínimo)</label>
+          <input id="f-banos-min" name="banos_min" type="number" inputmode="numeric" min="0" max="20">
+        </div>
+        <div class="campo">
+          <label for="f-estrato">Estrato</label>
+          <select id="f-estrato" name="estrato">
+            {{incluir:opciones-estrato}}
+          </select>
+        </div>
+        <div class="campo ancho">
+          <label for="f-mensaje">Algo más que debamos saber (opcional)</label>
+          <textarea id="f-mensaje" name="mensaje" maxlength="900"></textarea>
+        </div>
+      </div>
+    </fieldset>
+    {{incluir:campos-persona}}
+    {{incluir:consentimiento}}
+    <div class="web-form-acciones"><button type="submit" class="btn-primario">Quiero encontrar mi próximo inmueble</button></div>
+  </form>
+  <section class="web-resultados" data-resultados aria-live="polite" hidden></section>
+  <p class="web-nota web-nota-sep">Los inmuebles del reporte son avisos publicados en portales de terceros. Propio no es su anunciante: verifica el precio y la disponibilidad en el aviso original.</p>
+</section>
