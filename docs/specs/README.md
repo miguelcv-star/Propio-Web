@@ -1,6 +1,6 @@
 # Especificaciones de Aurex Web
 
-Salen de `../../20261015-Brief_Desarrollo_Pagina_Publica_Aurex.md` y siguen el proceso de `../../AGENTS.md`:
+Salen del brief de desarrollo del sitio (retirado del repositorio; se volverá a construir, y las citas «brief §N» quedan pendientes de revalidar) y siguen el proceso de `../../AGENTS.md`:
 spec corta → **aprobación del usuario** → pruebas primero → código → probar en local → recién ahí publicar.
 Plantilla: `_plantilla.md`. Estado inicial de todas: `borrador`.
 
