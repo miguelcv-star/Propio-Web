@@ -15,7 +15,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 RAIZ = Path(__file__).resolve().parent.parent
-IGNORAR = {"src", "docs", "tests", "scripts", ".git", "node_modules", "__pycache__"}
+IGNORAR = {"src", "docs", "tests", "scripts", ".git", "node_modules", "__pycache__", "dist"}
 CLAVES_PROHIBIDAS = {"telefono", "teléfono", "email", "correo", "nota", "notas", "usuario", "username", "token",
                      "password", "contrasena", "contacto", "anunciante", "whatsapp"}
 CLAVES_COORDENADAS = {"lat", "lon", "lng", "latitud", "longitud", "latitude", "longitude"}
